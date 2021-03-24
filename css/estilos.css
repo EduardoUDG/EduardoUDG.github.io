@@ -1,0 +1,305 @@
+
+/* Variables */
+:root {
+	--color-primario: #15B9C1;
+	--color-greey: rgba(0, 0, 0, .10);
+	--color-gold: gold;
+	--color-black: #000;
+}
+html { 
+	scroll-behavior: smooth
+}
+h1 {
+	font-size: 66px;
+}
+
+/* Estilos barra principal scroll */
+body::-webkit-scrollbar {
+	width: 12px;
+	background: #f2f2f2;
+}
+body::-webkit-scrollbar-thumb {
+	background: #00ccff;	/* 00ccff */
+	border-radius: 10px;
+	border-right: 2px solid #FAFDFF ;
+}
+
+/* banner */
+
+#titulo {
+	font-family: 'Sriracha';
+	line-height: 62px;
+	color: #000;
+}
+
+
+
+#titulo-2 {
+	font-family: 'Oswald', sans-serif;
+	color: #000;
+}
+
+@media (max-width: 575.98px) { 
+	#titulo {
+		line-height: 42px;
+	}
+}
+
+/* Estilos menu index */
+.navbar {
+	background-color: #ffffff;
+	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, .05) ;
+	min-height: 50px;
+}
+.estilos-menu{
+	font-family: 'Oswald';
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+.estilos-menu .estilos-item {
+	border-bottom: 3px solid transparent;
+	transition: .2s;
+}
+
+.estilos-menu .estilos-item:hover {
+	border-color: var(--color-gold);
+	color: var(--color-black);
+} 
+
+.nav-link {
+	color: #1a1a1a;
+	display: inline-block;
+}
+/* Estilos menu hamburguesa dispositivos moviles */
+
+.logo {
+	max-width: 30px;
+}
+/* Estilos boton del menu e dispositivos moviles */
+.navbar-toggler { font-size: 27px; }
+.navbar-toggler:focus { outline: none; } 
+
+/* estilos banner */
+#hero {
+	background: fixed no-repeat;
+	background-size: cover;
+	background-position: 0,0;
+}
+.texto-2 {
+	font-family: 'Lato';
+	font-size: 20px;
+	line-height: 1.8;
+}
+.texto-1{
+	font-family: 'Saira Condensed', sans-serif;
+}
+
+.container--hero {
+	width: 100%;
+	height: 100vh;
+}
+
+#hero {
+	background-image: url('../img/banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	min-height: 100vh;
+	color: #000;
+	transition: 2s;
+}
+#hero p {
+	font-family: 'Lato';
+	font-size: 20px;
+}
+
+.btn-outline-blanco {
+	color: #ffffff;
+	border-color: #ffffff;
+}
+.btn-outline-blanco:hover {
+	color: #00ff62;
+	border-color: #00ff62;
+	transition: .5s;
+}
+@media (max-width: 575.98px) { 
+	h1 {font-size: 40px; line-height: normal;}
+ }
+/*@media (max-width: 767.98px) { ... }
+@media (max-width: 991.98px) { ... }
+@media (max-width: 1199.98px) { ... }
+*/
+
+/* Estilos porftafolio */
+
+.portafolio--height {
+	min-height: 70vh;
+}
+
+.img-portafolio {
+	max-width: 400px;
+}
+
+@media (max-width: 992px) {
+	.img-portafolio {
+		width: 100%;
+	}
+
+	#titulo-2 {
+		font-size: 3.5rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.img-portafolio {
+		width: 60%;
+		text-align: center;
+	}
+}
+
+/* Mensaje */ 
+#mensaje img {
+	max-width: 120px;
+	padding: 20px;
+}
+
+
+.cartas-galeria img {
+	border-radius: 20px;
+}
+.img-galeria {
+	background: #3da5e2;
+}
+.img-galeria:hover {
+	opacity: .3;
+}
+
+.modal-dialog{
+	margin: 0px auto;
+	height: 100%;
+	max-width: 1000px;
+}
+.modal-content {
+	width: auto;
+}
+#imagen-modal {
+	width: 100%;
+	max-width: 1000px; 
+	height: auto;
+}
+/* Nuestros Servicios */
+.img-eventos {
+	width: 100%;
+	height: 300px;
+	display: inline-block;
+}
+
+/* Mediaqueries para columnas de las cards */
+
+@media (min-width: 1000px) {
+	.card-columns {
+	  -webkit-column-count: 4;
+	  -moz-column-count: 4;
+	  column-count: 4;
+	  -webkit-column-gap: 1.25rem;
+	  -moz-column-gap: 1.25rem;
+	  column-gap: 1.25rem;
+	  orphans: 1;
+	  widows: 1;
+	}
+	.card-columns .card {
+	  display: inline-block;
+	  width: 100%;
+	}
+  }
+/* Estilos de Nuestros servicios */
+
+
+
+/* Estilos de contacto */
+.estilos-contacto .estilos-form textarea {
+	padding: 15px;
+	width: 100%;
+    font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+	height: 150px;
+    min-height: 150px;
+	max-height: 250px;
+	border-radius: 5px;
+	border-color: var(--color-primario);
+}
+
+.estilos-contacto .estilos-form input[type="text"],
+.estilos-contacto .estilos-form input[type="email"] {
+	border-color: var(--color-primario);
+}
+
+
+.contacto--info {
+	position: relative;
+	overflow: hidden;
+}
+
+.contacto--img {
+	width: 250px;
+	position: absolute;
+	top: 15%;
+	right: -10%;
+}
+
+@media screen and (max-width: 1202px){
+	.contacto--img {
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.contacto--img {
+		width: 250px;
+		top: 15%;
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.contacto--img {
+		width: 200px;
+		top: 30%;
+		right: -10%;
+	}
+}
+
+
+/* Estilos Ubicaciones */
+.ubicacion-mapa {
+	width: 100%;
+	height: 400px;
+}
+
+/* Boton de contacto de whatsapp */
+
+.boton {
+	width: 50px;
+	height: 50px;
+	background-color: rgb(0, 219, 73);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.35);
+	font-size: 35px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	cursor: pointer;
+}
+
+.boton__icono {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.boton > a:link {
+	color: #fff;
+}
